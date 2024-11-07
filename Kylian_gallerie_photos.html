@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galerie Photo Kylian Mbappé</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Dégradé bleu sur toute la page */
+            background: linear-gradient(135deg, #00aaff, #004e92); 
+            font-family: 'Arial', sans-serif;
+            color: white;
+            overflow-x: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #00ffcc;
+            margin-bottom: 40px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 24px rgba(0, 255, 204, 0.6);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 255, 204, 0.5), rgba(0, 255, 204, 0.1));
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover::before {
+            opacity: 1;
+        }
+
+        /* Suppression de l'élément .info */
+        .gallery-item .info {
+            display: none; /* Enlever le texte lorsqu'on passe la souris */
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        /* Style pour le bouton */
+        .return-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #003366;  /* Couleur de fond du bouton */
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            border: none; /* Enlever toute bordure par défaut */
+        }
+
+        .return-button:hover {
+            background-color: #0057a1; /* Changement de couleur au survol */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Galerie Photo Kylian Mbappé</h1>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/kylian11.jpg" alt="Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="img/kylian12.jpg" alt="Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="img/kylian13.jpg" alt="Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="img/kylian14.jpg" alt="Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="img/kylian15.jpg" alt="Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="img/kylian16.jpg" alt="Image 6">
+            </div>
+        </div>
+
+        <!-- Ajout du bouton de retour à la page d'accueil -->
+        <footer>
+            <a href="fansite3.html" class="return-button">Retour à la page d'accueil</a>
+        </footer>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page de Présentation</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00aaff, #004e92); /* Fond bleu dégradé */
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .photos-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            gap: 20px;
+        }
+
+        .photo-box {
+            width: 45%;
+        }
+
+        .photo-box .title {
+            background-color: #003366; /* Fond bleu foncé */
+            color: white;
+            padding: 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .photo-box img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid #fff;
+        }
+
+        .photo-box .description {
+            background-color: #003366; /* Fond bleu foncé */
+            padding: 10px;
+            margin-top: 10px;
+            color: white;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+
+        /* Nouvelle section ajoutée en bas */
+        .additional-section {
+            margin-top: 50px;
+            padding: 20px;
+        }
+
+        .additional-section .title {
+            background-color: #003366; /* Fond bleu foncé */
+            color: white;
+            padding: 10px;
+            font-size: 1.5em;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .additional-section img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 5px solid #fff;
+        }
+
+        .additional-section .description {
+            background-color: #003366; /* Fond bleu foncé */
+            padding: 15px;
+            margin-top: 10px;
+            color: white;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        /* Style pour le bouton */
+        .return-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #003366;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .return-button:hover {
+            background-color: #0057a1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Biographie de Kylian Mbappé</h1>
+        <p>Voici une brève présentation de l'un des plus grands joueurs de football de sa génération.</p>
+        
+        <div class="photos-container">
+            <div class="photo-box">
+                <div class="title">Kylian Mbappé au Paris St Germain</div>
+                <img src="img/Kylian1.jpg" alt="Photo 1">
+                <div class="description">Kylian Mbappé rejoint le Paris Saint-Germain en 2017, d'abord en prêt puis définitivement en 2018, après un passage brillant à l'AS Monaco. Il devient rapidement l'un des meilleurs joueurs du club, remportant de nombreux titres, dont plusieurs Ligues 1. Malgré ses succès nationaux, il échoue à conquérir la Ligue des champions avec le PSG. En 2023, après des tensions liées à son avenir, Mbappé annonce son intention de quitter le club, attirant l'intérêt de clubs comme le Real Madrid.</div>
+            </div>
+            <div class="photo-box">
+                <div class="title">Kylian Mbappé au Real Madrid </div>
+                <img src="img/Kylian2.jpg" alt="Photo 2">
+                <div class="description">Depuis son arrivée au Real Madrid, Kylian Mbappé a rapidement marqué l'histoire du club, enchaînant les performances exceptionnelles. Il a contribué aux titres de la Liga et à la conquête de la Ligue des champions, devenant un pilier de l'attaque madrilène aux côtés de stars comme Karim Benzema et Vinícius Júnior. Sa vitesse, ses dribbles et son sens du but font de lui un joueur incontournable sur la scène internationale. Bien que ses débuts au Real aient été marqués par des attentes élevées, Mbappé continue de faire rayonner sa carrière au sein du club madrilène.</div>
+            </div>
+        </div>
+
+        <!-- Nouvelle section ajoutée en bas -->
+        <div class="additional-section">
+            <div class="title">Kylian Mbappé sort tout les soirs en boite de nuit ?</div>
+            <img src="img/Kylian3.jpg" alt="Futur de Mbappé">
+            <div class="description">Kylian Mbappé, bien qu'étant une figure publique et un modèle pour de nombreux jeunes, a parfois fait parler de lui pour ses sorties en boîte de nuit. Ces moments de détente, bien que privés, ont suscité des réactions, surtout dans le cadre de sa carrière de sportif de haut niveau. En effet, certains observateurs soulignent qu'il est essentiel pour un joueur de son calibre de maintenir une discipline de vie stricte, loin des distractions. Cependant, Mbappé a toujours affirmé qu'il savait gérer ses moments de récréation et que ces sorties ne nuisaient en rien à sa concentration ou à ses performances sur le terrain. En dépit des critiques, il reste une star du football, continuant de briller sur le terrain tout en restant discret sur sa vie personnelle.</div>
+        </div>
+
+    </div>
+
+    <footer>
+        <!-- Bouton retour à la page d'accueil -->
+        <a href="fansite3.html" class="return-button">Retour à la page d'accueil</a>
+    </footer>
+
+</body>
+</html>
+	

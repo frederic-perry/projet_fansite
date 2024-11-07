@@ -1,0 +1,88 @@
+
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #00CCFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	font-style: normal;
+	line-height: normal;
+	text-align: center;
+
+}
+
+
+        /* Style du menu */
+        nav {
+            background-color: #333;
+            padding: 10px;
+
+    
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Affichage en ligne */
+            justify-content: center; /* Alignement à gauche */
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+       
+ }
+  
+
+ 
+.container {
+text-align: center ;
+}
+
+   /* Media Queries pour les petits écrans */
+    @media (max-width: 768px) {
+      .image-container {
+        flex-direction: column;
+      }
+
+  .image-container img {
+        width: 60%; /* Les images prennent 80% de la largeur sur mobile */
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      a {
+        font-size: 1em;
+        padding: 8px;
+      }
+    }
+
+    /* Amélioration de l'accessibilité pour les personnes malentendantes : */
+    .accessible-video {
+      display: none; /* Désactiver les vidéos si non nécessaires */
+    }
+
+    /* Amélioration de la lisibilité pour tous : augmenter le contraste sur mobile */
+    @media (max-width: 768px) {
+      body {
+        font-size: 1.1em; /* Augmenter la taille de la police sur les petits écrans */
+      }
+
+

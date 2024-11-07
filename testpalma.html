@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fan Site - Palmares Antoine Griezmann</title>
+  <style>
+    /* Appliquer un dégradé bleu au fond de la page */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4e9aff, #1d4e89);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 180vh;
+      color: yellow;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Style pour le titre */
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      text-transform: uppercase;
+    }
+
+    /* Style pour le conteneur des images */
+    .image-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap; /* Permet aux images de s'adapter aux petites tailles d'écran */
+    }
+
+    /* Style pour les images */
+    .image-container img {
+      width: 350px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      flex: 1; /* Permet aux images de s'étirer en fonction de l'espace disponible */
+    }
+
+    /* Style pour la liste des récompenses */
+    .rewards-list {
+      text-align: left;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    .rewards-list li {
+      margin-bottom: 10px;
+    }
+
+    /* Style pour le lien retour */
+    a {
+      color: yellow;
+      text-decoration: none;
+      font-size: 1.2em;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #1d4e89;
+      border-radius: 5px;
+    }
+
+    a:hover {
+      background-color: #4e9aff;
+    }
+
+    /* Media Queries pour les petits écrans */
+    @media (max-width: 768px) {
+      .image-container {
+        flex-direction: column;
+      }
+
+      .image-container img {
+        width: 60%; /* Les images prennent 80% de la largeur sur mobile */
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      a {
+        font-size: 1em;
+        padding: 8px;
+      }
+    }
+
+    /* Amélioration de l'accessibilité pour les personnes malentendantes : */
+    .accessible-video {
+      display: none; /* Désactiver les vidéos si non nécessaires */
+    }
+
+    /* Amélioration de la lisibilité pour tous : augmenter le contraste sur mobile */
+    @media (max-width: 768px) {
+      body {
+        font-size: 1.1em; /* Augmenter la taille de la police sur les petits écrans */
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="img/ag_palmares_01.jpg" title="photo palmares" alt="Photo 1"width=350 weight=350><br>
+
+  <img src="img/ag_palmares_02.jpg" title="photo palmares" alt="Photo 1"width=350 weight=350>
+
+  <div>
+    <h1>Fan Site - Palmares Antoine Griezmann</h1>
+    <div class="image-container">
+      <!-- Remplace les liens des images par ceux de tes propres photos -->
+     
+    </div>
+
+    <ul class="rewards-list">
+      <li>2010 – Champion d’Europe (moins de 19 ans) : équipe de France jeunes</li>
+      <li>2014 – Vainqueur de la Super Coupe d’Espagne : Atlético Madrid</li>
+      <li>2015/2016 – Finaliste de la Ligue des Champions : Atlético Madrid</li>
+      <li>2015/2016 – Meilleur joueur du Championnat d’Espagne de la saison</li>
+      <li>2016 – Médaillé d’argent du Championnat d’Europe : Equipe de France</li>
+      <li>2016 – Meilleur buteur du Championnat d’Europe</li>
+      <li>2016 – Meilleur joueur du Championnat d’Europe</li>
+      <li>2016 – Membre de l’équipe symbolique du Championnat d’Europe 2016 selon l’UEFA</li>
+      <li>2016 – Footballeur de l’année en France</li>
+      <li>2018 – Ordre de la Légion d’Honneur</li>
+      <li>2018 — Champion du monde</li>
+      <li>2020/21 – Vainqueur de la Coupe d’Espagne</li>
+      <li>2022 – Médaillé d’argent aux Championnats du Monde : Equipe de France</li>
+    </ul>
+  </div>
+
+  <a href="fansite1.html">Retour Au Menu</a>
+
+  <!-- Ajout d'une section vidéo (qui peut être désactivée pour les malentendants) -->
+  <div class="accessible-video">
+    <video controls>
+      <source src="video/ag_interview.mp4" type="video/mp4">
+      Votre navigateur ne prend pas en charge la vidéo.
+    </video>
+  </div>
+
+</body>
+</html>
